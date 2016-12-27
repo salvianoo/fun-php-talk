@@ -3,10 +3,10 @@
 require 'Collection.php';
 require 'MoviesDataset.php';
 
-$moviesArray = new Collection($movies);
+$moviesCollection = new Collection($movies);
 
 //Collection Pipeline
-$result = $moviesArray
+$result = $moviesCollection
     ->filter(function($movie) {
         return $movie['year_release'] >= 1970 && $movie['year_release'] < 1980;
     })
