@@ -5,7 +5,7 @@ function Pessoa(name='Salviano') {
         'getName' => function() use ($name) {
             return $name;
         },
-        // Not work
+        // Not working
         'setName' => function($new_name) use ($name) {
             $name = $new_name;
         }

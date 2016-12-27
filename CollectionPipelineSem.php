@@ -17,7 +17,7 @@ $movies_rank_e_title = array_map(function($movie) {
 // var_dump($movies_rank_e_title);
 
 
-// Selecionar (rank e titulo) os filmes da decada de 70 com nota acima de 8.0
+// Selecionar a posicao e titulo (rank e title) dos filmes da decada de 70 com avaliacao superior a 8.0
 $filmes = [];
 foreach ($movies as $movie) {
     if ($movie['year_release'] >= 1970 && $movie['year_release'] < 1980) {
