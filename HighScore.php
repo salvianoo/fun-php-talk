@@ -12,7 +12,7 @@ $players = new Collection([
 ]);
 
 $compareScore = function ($p1, $p2){
-	return ($p1['score'] > $p2['score']) ? $p1 : $p2;
+    return ($p1['score'] > $p2['score']) ? $p1 : $p2;
 };
 
 //$winningPlayer = array_reduce($players, $compareScore);
