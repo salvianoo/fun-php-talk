@@ -23,14 +23,16 @@ class Collection
             array_map($callback, $this->arr)
         );
     }
-
+    
+    public function reduce($callback)
+    {
+        return new Collection(
+            array_reduce($this->arr, $callback)
+        );
+    }
+    
     public function __toString()
     {
         return implode(PHP_EOL, $this->arr) . PHP_EOL;
-    }
-
-    // Not implemented
-    public function reduce($callback)
-    {
     }
 }
